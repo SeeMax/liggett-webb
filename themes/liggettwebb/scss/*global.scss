@@ -1,0 +1,278 @@
+$black:#010202;
+$gray-dark: #919395;
+$gray-light: #F3F3F4;
+$maroon: #791500;
+$highlight: #EF4D27;
+
+html, body {
+	width:100%;
+	height: 100%;
+}
+
+body {	
+	font:400 14px/1.6 'Open Sans', sans-serif;
+	color:$black;
+}
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+
+.wrapper {
+	border: 6px solid $black;
+	width:100%;	
+	min-height: 100%;
+	margin:0 auto;	
+}
+
+main {
+	position: relative;
+	display: flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+	padding:0 55px;
+	margin:40px 0 20px 0;
+	overflow: auto;
+  padding-bottom: 225px;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1060px;
+}
+
+section {
+	position: relative;
+	margin-bottom:15px;
+	padding-bottom:15px;
+}
+
+.background-shape {
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity: .7;
+}
+
+.percent-100-w {
+	width:100%;
+}
+
+.percent-50-w {
+	width:50%;
+}
+
+.percent-33-w {
+	width:33.33333%;
+}
+
+.first-50-w {
+	padding-right:3%;
+}
+
+.title-only {
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+// .short-section {
+// 	margin-bottom:40px;
+// }
+
+.t-align-c {
+	text-align: center;
+}
+
+.t-align-r {
+	text-align: right;
+}
+
+.t-align-l {
+	text-align: left;
+}
+
+h1, h2, h3, h4 {
+	margin:0;
+}
+
+h1 {
+	font:800 26px/1 'faketura', 'Open Sans', sans-serif;
+}
+
+h2 {
+	font:800 18px/1 'faketura', 'Open Sans', sans-serif;
+	color:$maroon;
+	text-transform: uppercase;
+	margin-bottom:8px;
+}
+
+h3 {
+	font:800 16px/1 'faketura', 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+h4 {
+	font:800 16px/1 'faketura', 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	text-align: justify;
+}
+
+hr {
+	margin:0;
+	border: 0;
+  height: 1px;
+  background: $highlight;
+}
+
+ul {
+	position: relative;
+	border-bottom: 1px solid $highlight;
+
+	li {
+		position: relative;
+		border-top: 1px solid $highlight;
+		font:400 18px/1 'faketura', 'Open Sans', sans-serif;
+		padding:10px 0;
+	}
+
+	li.title {
+		font-weight:800;
+		border-top: 5px solid $black;
+	}	
+
+}
+
+// FOR OPENING ANIMATION
+section, h1, nav li, .header-logo {
+	opacity:0;
+}
+
+.hero {
+	// margin-bottom:10px;
+
+	p {
+		margin:8px 0 0 0;
+	}
+
+	hr {
+		margin:15px 0;
+	}
+}
+
+.button {
+	position: relative;
+	display:block;
+	margin-top:15px;
+}
+
+.button-guts {
+	display:inline-block;
+	font:800 14px/1 'faketura', 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color:white;
+	background: $highlight;
+	transition: background 0.5s;
+
+	a {
+		display: block;
+		width:100%;
+		height:100%;
+		padding:10px 12px;
+		color:white;
+	}
+
+	&:hover {
+		background:$black;
+	}
+}
+
+.partner-logo-hr {
+	margin:25px 0;
+}
+
+.partner-logo-img {
+	
+}
+
+.top-border {
+	margin-top:7px;
+	padding-top:5px;
+	border-top: 1px solid $highlight;
+}
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	body:before {
+  content: "";
+  height: 0;
+  float: none;
+  width: 0;
+  margin-top:0px;/* thank you Erik J - negate effect of float*/
+	}	
+
+
+	main {
+		padding:0 25px;
+		margin-bottom: 0px;
+	}
+
+	// section {
+	// 	margin-bottom:15px;
+	// 	padding-bottom:15px;
+	// }
+
+	// h1 {
+	// 	font-size:26px;
+	// }
+
+	// h2 {
+	// 	font-size:20px;
+	// 	margin-bottom:4px;
+	// }
+
+	// h3 {
+	// 	font-size:20px;
+	// }
+
+	// h4 {
+	// 	font-size:16px;
+	// }
+
+
+	.percent-50-w, .percent-33-w {
+		width:100%;
+	}
+
+	.first-50-w {
+		padding-right:0%;
+	}
+
+	.t-align-c, .t-align-r, .t-align-l {
+		text-align: center;
+	}
+
+	.button {
+    margin-top: 15px;
+  }
+
+	.hero {
+		
+		hr {
+			margin:8px 0;
+		}
+	}
+
+}

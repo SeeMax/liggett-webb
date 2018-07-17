@@ -1,0 +1,175 @@
+$black:#010202;
+$gray-dark: #919395;
+$gray-light: #F3F3F4;
+$maroon: #791500;
+$highlight: #EF4D27;
+
+.header {
+	border-bottom: 1px solid $gray-dark;
+	background: white;
+	
+	.content {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		padding:0 55px;
+	}
+}
+
+.mobile-menu {
+	display:none;
+}
+
+
+.header-logo {
+	height:100%;
+	width:42%;
+	margin:13px 0;
+
+
+	img {
+		height:100%;
+	}
+}
+
+.nav {
+	background: white;
+	width:50%;
+	display: flex;
+	justify-content:center;
+
+	
+	ul {
+		width:100%;
+		max-width:1060px;
+		display: flex;
+		justify-content:space-between;
+		align-items:stretch;
+		border-bottom: none;
+	}
+
+	li {
+		display: flex;
+		align-items:center;
+		font-size: 15px;
+		padding: 0;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		border-top: 10px solid white;
+		transition: border-top 1s;
+
+		&:hover {
+			border-top: 10px solid $highlight;
+		}
+	}
+
+	a {
+			
+	}
+}
+
+// For Nav Highlighting
+.home {
+	li.home-nav{
+		border-top:10px solid $black;
+	}
+}
+
+.about {
+	li.about-nav{
+		border-top:10px solid $black;
+	}
+}
+
+.industries {
+	li.industries-nav{
+		border-top:10px solid $black;
+	}
+}
+
+.services {
+	li.services-nav{
+		border-top:10px solid $black;
+	}
+}
+
+.news {
+	li.news-nav{
+		border-top:10px solid $black;
+	}
+}
+
+.contact {
+	li.contact-nav{
+		border-top:10px solid $black;
+	}
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.header {
+		background: $gray-light;
+		
+		.content {
+			display: flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			padding:0 25px;
+		}
+	}	
+
+	.mobile-menu {
+		z-index:999;
+		display:block;
+		cursor:pointer;
+		position: absolute;
+		top:20px;
+		right:25px;
+		width:30px;
+		height:auto;
+
+		span {
+			margin:4px 0;
+			background: $black;
+			display: block;
+			width:100%;
+			height:5px;
+		}
+	}
+	
+	.nav {
+		height: 0;
+		width:100%;
+		overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:998;
+    border:0px solid $black;
+
+    ul {
+			padding:30px 25px;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			align-items:stretch;
+    }
+
+    li {    	
+    	font-size: 18px;
+    	font-weight: 800;
+    	width:100%;
+    	border-top: 10px solid white !important;
+    }
+
+    a {
+    	margin:0 auto;
+    }
+	}
+
+	.header-logo {
+		width:85%;
+	}
+
+}

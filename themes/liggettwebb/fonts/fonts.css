@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'faketura';
+    src: url('faketura-medium.woff2') format('woff2'),
+         url('faketura-medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'faketura';
+    src: url('faketura-bold.woff2') format('woff2'),
+         url('faketura-bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}

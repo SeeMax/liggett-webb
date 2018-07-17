@@ -1,0 +1,133 @@
+$black:#010202;
+$gray-dark: #919395;
+$gray-light: #F3F3F4;
+$maroon: #791500;
+$highlight: #EF4D27;
+
+.home-page {
+
+	.space-between {
+		display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+	}
+
+	.home-sub-container {
+		display:flex;
+		flex-wrap:wrap;
+		align-items:stretch;
+	}
+
+	h1 {
+		font-size:30px;		
+	}
+
+	.logo-letters {
+		opacity: 0;
+		position: absolute;
+		width:190%;
+		height:100%;
+		margin: 0 auto;
+		align-items:center;
+
+		svg {
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	}
+
+	.logo-letters-l {
+		fill:white;
+		stroke:#929496;
+		stroke-width:.5;
+	}
+	
+	.logo-letters-w {
+		fill:white;
+		stroke:#7A1600;
+		stroke-width:.5;
+	}
+
+	.home-header-placeholder {
+		width:30%;	
+		opacity: 1 !important;
+	}
+
+	.home-header {
+		width:70%;
+		display:flex;
+		flex-wrap:wrap;
+		align-content: center;
+		margin:80px 0 90px 0;
+	}
+
+	.home-logo-group {
+		border-top: 1px solid $highlight;
+		border-bottom: 1px solid $highlight;
+		margin-top:20px;
+		display: flex;
+		flex-wrap:wrap;
+		align-items:center;
+	}
+
+	.home-logo {
+		margin:25px 0;
+		
+		img {
+			max-width:50%;
+		}
+	}
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.home-page {
+		margin-top:15px;
+
+		.home-logo-group {
+			padding:3px 0;
+		}
+
+		.home-logo {
+			margin:7px 0;
+			padding:3px 0;
+			
+			img {
+				max-width:50%;
+			}
+		}
+
+		.mid-logo {
+			padding:12px 0;
+			border-bottom: 1px solid $gray-light;
+			border-top: 1px solid $gray-light;
+		}
+
+
+		.home-header-placeholder {
+			width:100%;	
+			margin-bottom:0;
+			padding-bottom:5px;
+			
+		}
+
+		.home-header {
+			width:100%;
+			margin:10px 0 10px 0;
+		}
+
+
+		.logo-letters {
+			opacity: 0;
+			position: relative;
+			width:90%;
+			margin: 0 auto;
+		}
+	}
+
+
+}

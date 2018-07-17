@@ -1,0 +1,64 @@
+$black:#010202;
+$gray-dark: #919395;
+$gray-light: #F3F3F4;
+$maroon: #791500;
+$highlight: #EF4D27;
+
+.contact-page {
+
+	section {
+		
+	}
+
+	h2 {
+		color:$black;
+		margin-bottom: 10px;
+	}
+
+	li {
+		// font-size:24px;
+		line-height: 1.1;
+		transition: background .5s ease-in , padding-left .5s ease-in;
+
+		&:hover {
+			background: $highlight;
+			padding-left:10px;
+		}
+	}
+ 
+ .gloabl-reach {
+ 	margin-top:30px;
+ }
+
+	.partner-logo-img {
+		float:left;
+		padding:7px 20px 0 0;
+		width:180px;
+	}
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.contact-page {
+
+		section {
+			margin-bottom:40px;
+		}
+
+	}
+}
+
+@media screen and (max-width: 800px){
+	
+	.contact-page {
+
+		.partner-logo-img {
+			float:none;
+			display: block;
+			padding:5px 0 5px 0;			
+		}
+	}
+
+}
